@@ -12,7 +12,7 @@ Carnivora <- read_tsv("Carnivora_BOLD_data.tsv")
 install.packages("tidyverse")
 library(tidyverse)
 #since the table includes 80 columns, only main columns including sampleid, family_name, spp_name, species_name, country, bin_uri are extract
-s
+
 data <- data.frame(sampleid=Carnivora$sampleid,family_name=Carnivora$family_name, spp_name=Carnivora$species_name, bin_uri=Carnivora$bin_uri, country=Carnivora$country)
 view(data)
 
